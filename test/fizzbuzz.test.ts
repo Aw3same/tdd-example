@@ -1,18 +1,11 @@
 import { describe, expect, it } from 'vitest'
-
-const fizzbuzz = (number?: number): number | 'fizz' => {
-  if (typeof number !== 'number') throw new Error('Parameter provided must be a number')
-  if (Number.isNaN(number)) throw new Error('Parameter provided must be a number')
-
-  if (number === 3) return 'fizz'
-
-  return number
-}
+import { fizzbuzz } from '../src/fizzbuzz'
 
 describe('fizzbuzz', () => {
-  it('should be a function', (): void => {
-    expect(typeof fizzbuzz).toBe('function')
-  })
+  // Not neccesary because is tested in the next test cases
+  // it('should be a function', (): void => {
+  //   expect(typeof fizzbuzz).toBe('function')
+  // })
   it('should throw an error if not number is provided as parameter', (): void => {
     expect(() => fizzbuzz()).toThrow()
   })
@@ -28,8 +21,26 @@ describe('fizzbuzz', () => {
   it('should return 2 if number provided is 2', (): void => {
     expect(fizzbuzz(2)).toBe(2)
   })
-  it('should returnn fizz if number provided is 3', (): void => {
+  it('should return "fizz" if number provided is 3', (): void => {
     expect(fizzbuzz(3)).toBe('fizz')
   })
-
+  it('should return "fizz" if number provided is multiple of 3', (): void => {
+    expect(fizzbuzz(6)).toBe('fizz')
+    expect(fizzbuzz(9)).toBe('fizz')
+    expect(fizzbuzz(12)).toBe('fizz')
+  })
+  // Not necessary, cover by another test
+  // it('should return 4 if number provided is 4', (): void => {
+  //   expect(fizzbuzz(4)).toBe(4)
+  // })
+  it('should return "buzz" if number provided is 5', (): void => {
+    expect(fizzbuzz(5)).toBe('buzz')
+  })
+  it('should return "buzz" if number provided is multiple of 5', (): void => {
+    expect(fizzbuzz(10)).toBe('buzz')
+    expect(fizzbuzz(25)).toBe('buzz')
+  })
+  it('should return "fizzbuzz" if number provided is multiple of 15', (): void => {
+    expect(fizzbuzz(15)).toBe('fizzbuzz')
+  })
 })
