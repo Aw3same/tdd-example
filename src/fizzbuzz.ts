@@ -1,3 +1,13 @@
+/**
+ * Given an integer n, return:
+ * - "Buzz" if i is divisible by 5.
+ * - "Fizz" if i is divisible by 3.
+ * - "FizzBuzz" if i is divisible by 3 and 5.
+ * - n if none of the above conditions are true.
+ * 
+ * @param number 
+ * @returns 
+ */
 export const fizzbuzz = (
   number?: number
 ): number | string => {
