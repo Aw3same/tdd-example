@@ -3,18 +3,25 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type":"module",
+  "type": "module",
   "scripts": {
     "test": "vitest",
-    "coverage":"vitest run --coverage"
+    "coverage": "vitest run --coverage"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@testing-library/react": "^13.4.0",
+    "@vitejs/plugin-react": "^2.1.0",
+    "happy-dom": "^6.0.4",
     "standart": "^6.1.0",
     "vitest": "^0.23.4"
   },
   "eslintConfig": {
     "extends": "./node_modules/standart/eslintrc.json"
+  },
+  "dependencies": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
   }
 }
