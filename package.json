@@ -21,6 +21,7 @@
     "extends": "./node_modules/standart/eslintrc.json"
   },
   "dependencies": {
+    "mathjs": "^11.2.1",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   }
