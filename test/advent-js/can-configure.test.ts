@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { canReconfigure } from '../src/canReconfigure'
+import { canReconfigure } from '../../src/advent-js/canReconfigure'
 
 describe('canReconfigure', (): void => {
     // it('should be a function', (): void => {

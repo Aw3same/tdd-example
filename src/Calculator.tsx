@@ -10,7 +10,7 @@ export const equalSign = '='
 export const Calculator = () => {
   const [value, setValue] = useState('')
 
-  const createHandleClick = op => (): void =>
+  const createHandleClick = (op: number | string) => (): void =>
     setValue(value.concat(op.toString()))
   return (
     <div>
