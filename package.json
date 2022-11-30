@@ -8,7 +8,10 @@
     "dev": "vite",
     "test": "vitest",
     "coverage": "vitest run --coverage",
-    "challenge01" : "nodemon ./src/codember/Challenge01/challenge01.js"
+    "challenge01": "nodemon ./src/codember/Challenge01/challenge01.js",
+    "challenge04": "node ./src/codember/Challenge04/challenge04.js",
+    "challenge05js": "node ./src/codember/Challenge05/Challenge05.js",
+    "challenge05": "tsc ./src/codember/Challenge05/challenge05.ts"
   },
   "author": "",
   "license": "ISC",
@@ -18,6 +21,7 @@
     "happy-dom": "^6.0.4",
     "nodemon": "^2.0.20",
     "standart": "^6.1.0",
+    "typescript": "^4.9.3",
     "vitest": "^0.23.4"
   },
   "eslintConfig": {
